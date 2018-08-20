@@ -1,14 +1,11 @@
-$ = require("jquery");
-require("@progress/kendo-ui/js/kendo.dropdownlist.js");
+import './main.css';
+import "@progress/kendo-ui/js/kendo.dropdownlist.js";
+import "@progress/kendo-ui/css/web/kendo.common.core.min.css";
+import "@progress/kendo-ui/css/web/kendo.default.min.css";
+import * as $ from "jquery"
+import * as KendoTemplateCreator from "./src/templateCreators/KendoTemplateCreator";
 
-require("@progress/kendo-ui/css/web/kendo.common.core.min.css");
-require("@progress/kendo-ui/css/web/kendo.default.min.css");
-
-
-// service = require("./src/service");
 
 $(document).ready(function () {
-    templateCreator = require("./src/TemplateCreator/KendoTemplateCreator");
-    templateCreator.CreateContactsList();
+    KendoTemplateCreator.CreateContactsList();
 });
-
