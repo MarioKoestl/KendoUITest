@@ -1,8 +1,9 @@
 data = require("./mockData");
 
-var exports = module.exports = {};
-
-exports.getColor = function()
-{
-    return data.ColorSelections;
+getUserData = function () {
+    return data.UserData;
 }
+
+module.exports = {
+    getUserData: getUserData
+};

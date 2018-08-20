@@ -5,13 +5,10 @@ require("@progress/kendo-ui/css/web/kendo.common.core.min.css");
 require("@progress/kendo-ui/css/web/kendo.default.min.css");
 
 
-service = require("./src/service");
-$("#sel").kendoDropDownList(
-    {
-        dataTextField:"text",
-        dataValueField:"value",
-        dataSource: service.getColor(),
-        index:0,
-    }
-);
+// service = require("./src/service");
+
+$(document).ready(function () {
+    templateCreator = require("./src/TemplateCreator/KendoTemplateCreator");
+    templateCreator.CreateContactsList();
+});
 

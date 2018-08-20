@@ -1,7 +1,16 @@
-var ColorSelections = [
-    { text: "Black", value: "1" },
-    { text: "Orange", value: "2" },
-    { text: "Grey", value: "3" }
-];
+var UserData = [{
+    Name: "John Doe",
+    Phone1: "34253456",
+    Phone2: "987",
+    EMail1: "sdf@sdf",
+    EMail2: "df@sdf"
+}];
 
-exports.ColorSelections = ColorSelections;
+var test = [{
+    sdf:"sdf"
+}]
+
+
+module.exports = {
+    UserData:UserData
+}
