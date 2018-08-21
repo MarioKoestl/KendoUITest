@@ -14,6 +14,11 @@ module.exports = {
                 ]
             },
             {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
+            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     'file-loader'
@@ -27,6 +32,9 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.ts', '.js' ]
+      },
     devtool: 'inline-source-map',
     // devServer: {
     //     contentBase: '.'
